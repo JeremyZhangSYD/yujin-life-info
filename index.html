@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Yujin Life Gmail is a private, read-only personal email assistant. Learn what it does, what it reads, and how data is handled.">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'; connect-src 'none'">
+  <title>Yujin Life Gmail — a clearer inbox, privately</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">Y</span><span>Yujin <span class="brand-light">Life Gmail</span></span></a>
+    <nav aria-label="Main navigation"><a href="index.html" aria-current="page">Overview</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
+  </header>
+  <main id="main">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <p class="eyebrow">PRIVATE ASSISTANT · PUBLIC INFORMATION</p>
+        <h1>A little less inbox.<br><em>A little more clarity.</em></h1>
+        <p class="lede">A personal, read-only Gmail assistant inside the owner's private Yujin workspace. Find relevant messages, understand what matters, and identify possible next steps.</p>
+        <a class="primary-link" href="privacy.html">Understand the data flow <span aria-hidden="true">↗</span></a>
+      </div>
+      <aside class="permission-note" aria-label="Gmail access boundary">
+        <span class="small-label">THE ACCESS BOUNDARY</span>
+        <h2>Read. Understand.<br>Leave your mail unchanged.</h2>
+        <div class="scope-tag">gmail.readonly</div>
+        <p>The Gmail integration cannot send, delete, archive, label, mark messages as read, or create Gmail drafts.</p>
+        <div class="note-bottom"><span class="status-dot" aria-hidden="true"></span>One private workspace. Owner-authorized access.</div>
+      </aside>
+    </section>
+    <section class="boundary wrap" aria-labelledby="public-site-heading">
+      <span class="boundary-icon" aria-hidden="true">i</span>
+      <div><h2 id="public-site-heading">This website is not the private workspace.</h2><p>No sign-in, mailbox connection, inbox display, or agent controls are hosted here. These pages only explain the application and its policies.</p><p class="zh-note" lang="zh-CN">这是公开说明页，不是办公室入口；这里不存放邮件、密钥或私人工作界面。</p></div>
+    </section>
+    <section class="workflow wrap" aria-labelledby="workflow-heading">
+      <div class="section-heading"><p class="eyebrow">HOW THE PRIVATE ASSISTANT WORKS</p><h2 id="workflow-heading">From a question to a useful first pass.</h2></div>
+      <ol class="steps">
+        <li><span class="step-number">01</span><h3>Search with a purpose</h3><p>The owner asks a question. The assistant searches a bounded date or topic range through the official Gmail API.</p></li>
+        <li><span class="step-number">02</span><h3>Read relevant evidence</h3><p>It retrieves message metadata, snippets, and selected plain-text bodies. Attachment downloads and HTML rendering are not supported.</p></li>
+        <li><span class="step-number">03</span><h3>Summarize, not execute</h3><p>The configured AI model helps produce summaries and possible tasks. Source IDs and coverage limits keep the result checkable.</p></li>
+      </ol>
+    </section>
+    <section class="details-band">
+      <div class="wrap details-grid">
+        <div><p class="eyebrow">A CLEARER EXPECTATION</p><h2>Helpful context.<br>Human decisions.</h2></div>
+        <div class="detail-copy"><p>Email excerpts needed for a requested summary may be sent to the owner's configured AI processing provider. Read-only describes Gmail permissions; it does <strong>not</strong> mean all processing stays on the device.</p><p>Searches may be partial, and AI suggestions can be wrong. Verify deadlines, amounts, and commitments against the original message. No payment or external commitment is made by this Gmail integration.</p><a class="text-link" href="privacy.html">Read the full privacy policy <span aria-hidden="true">→</span></a></div>
+      </div>
+    </section>
+    <section class="contact wrap" aria-labelledby="contact-heading"><div><p class="eyebrow">PERSONAL PROJECT</p><h2 id="contact-heading">Questions about the application?</h2><p>Maintained by <a href="https://github.com/JeremyZhangSYD">JeremyZhangSYD</a>. Use the public issue tracker for general questions only. Never post mail contents, credentials, or private account details.</p></div><a class="secondary-link" href="https://github.com/JeremyZhangSYD/yujin-life-info/issues">Project contact <span aria-hidden="true">↗</span></a></section>
+  </main>
+  <footer class="site-footer wrap"><span>Yujin Life Gmail · Personal-use application</span><nav aria-label="Footer navigation"><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of use</a><a href="https://github.com/JeremyZhangSYD/yujin-life-info">Public documentation</a></nav><span class="footer-note">Updated 23 October 2026 · Not affiliated with or endorsed by Google.</span></footer>
+</body>
+</html>

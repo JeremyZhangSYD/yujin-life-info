@@ -1,0 +1,12 @@
+.DS_Store
+.env*
+.secrets/
+.local/
+node_modules/
+*.log
+*.db
+*.sqlite*
+*.pem
+*.key
+*token*.json
+*client*.json
